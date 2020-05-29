@@ -1,0 +1,72 @@
+$color1: black;
+$color2: teal;
+h1, h2, h3, h4, h5 {
+  color: $color1;
+  font-family: monospace,fantasy;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: left;
+
+}
+
+#first{
+  background-color: teal;
+  height: 100px;
+  width: 100%;
+  margin: 30;
+  padding: 20px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+
+
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 5px
+
+
+}
+
+th {
+  background-color: grey;
+}
+
+ul, ol {
+  color: $color1;
+  font-family: monospace, fantasy;
+  text-align: left;
+  line-height:1.3;
+}
+
+ol {
+  color: $color2;
+}
+
+%message {
+    max-width: 100;
+    margin: 10px;
+}
+
+.alert {
+        margin: 20px;
+            }
+
+.alert alert-success {
+    @extend %message;
+    background-color: lime green;
+}
+
+.alert alert-secondary{
+    @extend %message;
+    background-color: grey;
+}

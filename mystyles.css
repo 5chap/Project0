@@ -1,0 +1,71 @@
+h2, h3, h4, h5 {
+  color: grey;
+  font-family: monospace,fantasy;
+  text-align: center;
+  font-weight: bold;
+}
+
+h5 {
+  position: relative;
+  top: -20px;
+}
+
+button {
+  background-color: white;
+
+}
+
+button:hover {
+  background-color: orange;
+}
+
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+.container > div {
+      background-color: springgreen;
+      font-size: 20px;
+      margin: 20px;
+      padding: 30px;
+      width: 300px;
+      height: 200px;
+
+
+    }
+
+img {
+  width: 300px;
+  height: 180px;
+  align: center;
+}
+
+@media (min-width: 500px) {
+    h2::before {
+        content: "WELCOME TO MY PORTAL, BUDDY!";
+    }
+}
+
+@media (max-width: 499px) {
+    h2::before {
+        content: "WELCOME, BUDDY!";
+    }
+}
+
+.grid {
+        background-color: green;
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 300px 300px 300px;
+      }
+
+.grid-item {
+        background-color: white;
+        font-size: 20px;
+        padding: 0px
+        text-align: center;
+          }
